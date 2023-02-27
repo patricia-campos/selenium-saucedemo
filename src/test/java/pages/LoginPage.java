@@ -9,15 +9,15 @@ public class LoginPage {
     //                                          Página Login | LOGIN
     //==================================================================================================================
 
-    // DECLARAÇÃO DOS CAMPOS:
+    // Declaração de campos de preenchimento:
 
-    public static final By username = By.cssSelector("#user-name");
-    public static final By password = By.cssSelector("#password");
-    public static final By loginBtn = By.cssSelector("#login-button");
+    public static final By frmUsername = By.cssSelector("#user-name");
+    public static final By frmPassword = By.cssSelector("#password");
+    public static final By btnLogin = By.cssSelector("#login-button");
 
     // Validações:
-    public static final By msgLoginEfetuado = By.cssSelector("#header_container > div.header_secondary_container > span");
-    public static final By msgLoginIncorreto = By.cssSelector("#login_button_container > div > form > div.error-message-container.error > h3");
+    public static final By mnuProducts= By.cssSelector("#header_container > div.header_secondary_container > span");
+    public static final By lblIncorrectLogin = By.cssSelector("#login_button_container > div > form > div.error-message-container.error > h3");
 
 
     //==================================================================================================================
@@ -25,44 +25,42 @@ public class LoginPage {
     // MÉTODOS:
 
     // Preencher com dados válidos:
-    public void preencherUsernameCorreto() {
-        BaseTest.sendKeys(username, "standard_user");
-    }
+    public void preencherUsernameCorreto() { BaseTest.sendKeys(frmUsername, "standard_user"); }
 
     public void preencherPasswordCorreto() {
-        BaseTest.sendKeys(password, "secret_sauce");
+        BaseTest.sendKeys(frmPassword, "secret_sauce");
     }
 
     // Preencher com dados incorretos:
     public void preencherUsernameIncorreto() {
-        BaseTest.sendKeys(username, "UsernameIncorreto");
+        BaseTest.sendKeys(frmUsername, "UsernameIncorreto");
     }
 
     public void preencherPasswordIncorreto() {
-        BaseTest.sendKeys(password, "PasswordIncorreto");
+        BaseTest.sendKeys(frmPassword, "PasswordIncorreto");
     }
 
     // Dados vazio:
     public void preencherUsernameVazio() {
-        BaseTest.sendKeys(username, "");
+        BaseTest.sendKeys(frmUsername, "");
     }
 
     public void preencherPasswordVazio() {
-        BaseTest.sendKeys(password, "");
+        BaseTest.sendKeys(frmPassword, "");
     }
 
     // Efetuar Login:
     public void clicarLoginBtn() {
-        BaseTest.click(loginBtn);
+        BaseTest.click(btnLogin);
     }
 
     // Validações:
     public String validarLoginComSucesso() {
-        return BaseTest.getText(msgLoginEfetuado);
+        return BaseTest.getText(mnuProducts);
     }
 
     public String validarLoginSemSucesso() {
-        return BaseTest.getText(msgLoginIncorreto);
+        return BaseTest.getText(lblIncorrectLogin);
     }
 
 }
