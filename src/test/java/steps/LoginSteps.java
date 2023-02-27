@@ -12,75 +12,72 @@ public class LoginSteps extends Browser {
     //==================================================================================================================
     //                                                 LOGIN
     //==================================================================================================================
-
-    // NOVO PROJETO INICIADO - REFATORAR o código iniciado nos estudos de estágio
-
-    // LOGIN COM SUCESSO:
+    // ID:
+    // DATA:
+    // RESULTADO:
     @Test
-    public void logarComSucesso() {
+    public void efetuarLoginComSucesso() {
 
         loginPage.preencherUsernameCorreto();
         loginPage.preencherPasswordCorreto();
         loginPage.clicarLoginBtn();
 
-        // Validação:
         Assert.assertEquals(loginPage.validarLoginComSucesso(), "PRODUCTS");
     }
 
     //==================================================================================================================
-
-    // LOGIN SEM SUCESSO | Username incorreto
+    // ID:
+    // DATA:
+    // RESULTADO:
     @Test
-    public void logarSemSucessoUsernameIncorreto() {
+    public void efetuarLoginSemSucessoUsernameIncorreto() {
 
         loginPage.preencherUsernameIncorreto();
         loginPage.preencherPasswordCorreto();
         loginPage.clicarLoginBtn();
 
-        // Validação:
         Assert.assertEquals(loginPage.validarLoginSemSucesso(), "Epic sadface: Username and password do not match any user in this service");
     }
 
     //==================================================================================================================
-
-    // LOGIN SEM SUCESSO | Password incorreto
+    // ID:
+    // DATA:
+    // RESULTADO:
     @Test
-    public void logarSemSucessoPasswordIncorreto() {
+    public void efetuarLogiSemSucessoPasswordIncorreto() {
 
         loginPage.preencherUsernameCorreto();
         loginPage.preencherPasswordIncorreto();
         loginPage.clicarLoginBtn();
 
-        // Validação:
         Assert.assertEquals(loginPage.validarLoginSemSucesso(), "Epic sadface: Username and password do not match any user in this service");
     }
 
     //==================================================================================================================
-
-    // LOGIN SEM SUCESSO | Username vazio
+    // ID:
+    // DATA:
+    // RESULTADO:
     @Test
-    public void logarSemSucessoUsernameVazio() {
+    public void efetuarLoginSemSucessoUsernameVazio() {
 
         loginPage.preencherUsernameVazio();
         loginPage.preencherPasswordCorreto();
         loginPage.clicarLoginBtn();
 
-        // Validação:
         Assert.assertEquals(loginPage.validarLoginSemSucesso(), "Epic sadface: Username is required");
     }
 
     //==================================================================================================================
-
-    // LOGIN SEM SUCESSO | Password vazio
+    // ID:
+    // DATA:
+    // RESULTADO:
     @Test
-    public void logarSemSucessoPasswordVazio() {
+    public void efetuarLoginSemSucessoPasswordVazio() {
 
         loginPage.preencherUsernameCorreto();
         loginPage.preencherPasswordVazio();
         loginPage.clicarLoginBtn();
 
-        // Validação:
         Assert.assertEquals(loginPage.validarLoginSemSucesso(), "Epic sadface: Password is required");
     }
-
 }
