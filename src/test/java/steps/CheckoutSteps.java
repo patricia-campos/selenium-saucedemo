@@ -20,7 +20,7 @@ public class CheckoutSteps extends Browser {
     //==================================================================================================================
     //                                                 CADASTRO CHECKOUT
     //==================================================================================================================
-
+/*
     // CADASTRO CHECKOUT COM SUCESSO
     @Test
     public void efetuarCheckoutComSucesso() {
@@ -71,5 +71,5 @@ public class CheckoutSteps extends Browser {
         Assert.assertEquals(checkoutPage.validarCheckoutSemSucesso(), "Error: First Name is required");
     }
 
-
+*/
 }

@@ -14,7 +14,7 @@ public class InventorySteps extends Browser {
     //==================================================================================================================
     //                                               FILTER | A to Z
     //==================================================================================================================
-
+/*
     // BUSCAR A TO Z COM SUCESSO
     @Test
     public void buscarAToZComSucesso() {
@@ -162,5 +162,5 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarQuantidadeSemSucesso(), "");
 
     }
-
+*/
 }

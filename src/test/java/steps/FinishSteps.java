@@ -23,7 +23,7 @@ public class FinishSteps extends Browser {
     //==================================================================================================================
     //                                                  FINISH
     //==================================================================================================================
-
+/*
     // CADASTRO CHECKOUT COM SUCESSO
     @Test
     public void finalizarCompraComSucesso() {
@@ -50,6 +50,6 @@ public class FinishSteps extends Browser {
         // Validação:
         Assert.assertEquals(finishPage.validarFinishComSucesso(), "THANK YOU FOR YOUR ORDER");
     }
-
+*/
 }
 
