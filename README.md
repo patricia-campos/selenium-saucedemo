@@ -16,6 +16,6 @@ https://www.saucedemo.com/
 <br>
 
 ## Documentação de testes 📖
-- [x] Plano de testes
+- [x] Plano de testes - EM CONSTRUÇÃO 🚧
 - [ ] Cenários de testes
 
