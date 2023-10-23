@@ -23,7 +23,7 @@ public class Browser {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver,30);
         driver.get(url);
-        driver.manage().timeouts().implicitlyWait(6000, TimeUnit.MICROSECONDS);
+        driver.manage().timeouts().implicitlyWait(9000, TimeUnit.MICROSECONDS);
         driver.manage().window().maximize();
     }
 

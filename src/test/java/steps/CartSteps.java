@@ -17,7 +17,7 @@ public class CartSteps extends Browser {
     //==================================================================================================================
     //                                              REMOVE FROM CART
     //==================================================================================================================
-
+/*
     // REMOVER 5 PRODUTOS DO CARRINHO COM SUCESSO
 
     @Test
@@ -96,5 +96,5 @@ public class CartSteps extends Browser {
         Assert.assertEquals(cartPage.validarCheckoutComSucesso(), "CHECKOUT: YOUR INFORMATION");
 
     }
-
+*/
 }

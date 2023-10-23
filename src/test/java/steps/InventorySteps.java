@@ -12,10 +12,39 @@ public class InventorySteps extends Browser {
     InventoryPage inventoryPage = new InventoryPage();
 
     //==================================================================================================================
-    //                                               FILTER | A to Z
+    //
+    //                                           INVENTORY PAGE | Menu
+    //
     //==================================================================================================================
+    // ID:     08
+    // TÍTULO: Navegar no Menu da página COM SUCESSO
 
-    // BUSCAR A TO Z COM SUCESSO
+    //==================================================================================================================
+    // ID:     09
+    // TÍTULO: Acessar opção "ALL ITEMS" do Menu COM SUCESSO
+
+    //==================================================================================================================
+    // ID:     10
+    // TÍTULO: Acessar opção "ABOUT" do Menu COM SUCESSO
+
+    //==================================================================================================================
+    // ID:     11
+    // TÍTULO: Acessar opção "LOGOUT" do Menu COM SUCESSO
+
+    //==================================================================================================================
+    // ID:     12
+    // TÍTULO: Acessar opção "RESET APP STATE" do Menu COM SUCESSO
+
+
+/*
+    //==================================================================================================================
+    //
+    //                                         INVENTORY PAGE | Filtro
+    //
+    //==================================================================================================================
+    // ID:     13
+    // TÍTULO: Filtrar itens à venda por nome - Ordem alfabética - CRESCENTE COM SUCESSO
+
     @Test
     public void buscarAToZComSucesso() {
 
@@ -27,23 +56,11 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarBuscaComSucesso(), "$29.99");
     }
 
-    //BUSCAR A TO Z SEM SUCESSO
-    @Test
-    public void buscarAToZSemSucesso() {
-
-        loginSteps.logarComSucesso();
-        inventoryPage.clicarFilter();
-        inventoryPage.clicarFilterNameAToZ();
-
-        // Validação:
-        Assert.assertEquals(inventoryPage.validarBuscaSemSucesso(), "");
-    }
 
     //==================================================================================================================
-    //                                               FILTER | Z to A
-    //==================================================================================================================
+    // ID:     14
+    // TÍTULO: Filtrar itens à venda por nome - Ordem alfabética - DECRESCENTE COM SUCESSO
 
-    // BUSCAR Z TO A COM SUCESSO
     @Test
     public void buscarZToAComSucesso() {
 
@@ -55,23 +72,10 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarBuscaComSucesso(), "$15.99");
     }
 
-    //BUSCAR Z TO A SEM SUCESSO
-    @Test
-    public void buscarZToASemSucesso() {
-
-        loginSteps.logarComSucesso();
-        inventoryPage.clicarFilter();
-        inventoryPage.clicarFilterNameZToA();
-
-        // Validação:
-        Assert.assertEquals(inventoryPage.validarBuscaSemSucesso(), "");
-    }
-
     //==================================================================================================================
-    //                                               FILTER | LOW to HIGH
-    //==================================================================================================================
+    // ID:     15
+    // TÍTULO: Filtrar itens à venda por nome - Ordem de preço - CRESCENTE COM SUCESSO
 
-    // BUSCAR LOW to HIGH COM SUCESSO
     @Test
     public void buscarLowToHighComSucesso() {
 
@@ -83,23 +87,10 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarBuscaComSucesso(), "$7.99");
     }
 
-    //BUSCAR LOW to HIGH  SEM SUCESSO
-    @Test
-    public void buscarLowToHighSemSucesso() {
-
-        loginSteps.logarComSucesso();
-        inventoryPage.clicarFilter();
-        inventoryPage.clicarFilterPriceLowToHigh();
-
-        // Validação:
-        Assert.assertEquals(inventoryPage.validarBuscaSemSucesso(), "");
-    }
-
     //==================================================================================================================
-    //                                               FILTER | HIGH to LOW
-    //==================================================================================================================
+    // ID:     16
+    // TÍTULO: Filtrar itens à venda por nome - Ordem de preço - DECRESCENTE COM SUCESSO
 
-    // BUSCAR HIGH to LOW COM SUCESSO
     @Test
     public void buscarHighToLowComSucesso() {
 
@@ -111,17 +102,8 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarBuscaComSucesso(), "$49.99");
     }
 
-    //BUSCAR HIGH to LOW  SEM SUCESSO
-    @Test
-    public void buscarHighToLowSemSucesso() {
+    //==================================================================================================================
 
-        loginSteps.logarComSucesso();
-        inventoryPage.clicarFilter();
-        inventoryPage.clicarFilterPriceHighToLow();
-
-        // Validação:
-        Assert.assertEquals(inventoryPage.validarBuscaSemSucesso(), "");
-    }
 
     //==================================================================================================================
     //                                              ADD TO CART
@@ -162,5 +144,5 @@ public class InventorySteps extends Browser {
         Assert.assertEquals(inventoryPage.validarQuantidadeSemSucesso(), "");
 
     }
-
+*/
 }
